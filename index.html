@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codence - Web & Mobile App Development</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -59,7 +62,8 @@
                     <i class="fas fa-laptop-code"></i>
                 </div>
                 <h3>Web Development</h3>
-                <p>Custom website development with responsive design, e-commerce solutions, and content management systems.</p>
+                <p>Custom website development with responsive design, e-commerce solutions, and content management
+                    systems.</p>
             </div>
             <div class="service-card" data-aos="flip-left" data-aos-delay="200">
                 <div class="service-icon">
@@ -73,7 +77,8 @@
                     <i class="fas fa-paint-brush"></i>
                 </div>
                 <h3>UI/UX Design</h3>
-                <p>User-centric design focused on creating intuitive, engaging, and visually appealing digital experiences.</p>
+                <p>User-centric design focused on creating intuitive, engaging, and visually appealing digital
+                    experiences.</p>
             </div>
             <div class="service-card" data-aos="flip-left" data-aos-delay="400">
                 <div class="service-icon">
@@ -165,8 +170,10 @@
             </div>
             <div class="about-content" data-aos="fade-left">
                 <h3>Who We Are</h3>
-                <p>Codence is a leading software development company specializing in web and mobile applications. We combine creativity with technical expertise to deliver outstanding digital solutions.</p>
-                <p>Our team of skilled developers, designers, and digital strategists work together to bring your ideas to life and help your business grow in the digital landscape.</p>
+                <p>Codence is a leading software development company specializing in web and mobile applications. We
+                    combine creativity with technical expertise to deliver outstanding digital solutions.</p>
+                <p>Our team of skilled developers, designers, and digital strategists work together to bring your ideas
+                    to life and help your business grow in the digital landscape.</p>
                 <div class="stats-container">
                     <div class="stat-item">
                         <h4>100+</h4>
@@ -193,7 +200,8 @@
         <div class="testimonial-slider" data-aos="fade-up">
             <div class="testimonial-slide active">
                 <div class="testimonial-content">
-                    <p>"Codence delivered our e-commerce platform ahead of schedule with exceptional quality. Their attention to detail and responsive communication made the process seamless."</p>
+                    <p>"Codence delivered our e-commerce platform ahead of schedule with exceptional quality. Their
+                        attention to detail and responsive communication made the process seamless."</p>
                     <div class="client-info">
                         <h4>Mayur Kosandar</h4>
                         <p>E-commerce Business Owner</p>
@@ -202,7 +210,8 @@
             </div>
             <div class="testimonial-slide">
                 <div class="testimonial-content">
-                    <p>"The mobile app they developed for our healthcare service has received outstanding feedback from users. Their technical expertise and innovative approach exceeded our expectations."</p>
+                    <p>"The mobile app they developed for our healthcare service has received outstanding feedback from
+                        users. Their technical expertise and innovative approach exceeded our expectations."</p>
                     <div class="client-info">
                         <h4>Santosh Basragan</h4>
                         <p>Healthcare Services Director</p>
@@ -211,7 +220,8 @@
             </div>
             <div class="testimonial-slide">
                 <div class="testimonial-content">
-                    <p>"Working with Codence was a pleasure from start to finish. They understood our vision perfectly and transformed it into an intuitive, beautiful website."</p>
+                    <p>"Working with Codence was a pleasure from start to finish. They understood our vision perfectly
+                        and transformed it into an intuitive, beautiful website."</p>
                     <div class="client-info">
                         <h4>Shubham Raut</h4>
                         <p>Marketing Manager</p>
@@ -334,5 +344,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(contactForm);
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    contactForm.reset();
+                    const responseContainer = document.querySelector('.form-status');
+                    responseContainer.textContent = 'Thank you for contacting us. We will get back to you soon.';
+                }
+            };
+            xhttp.open("POST", "https://script.google.com/macros/s/AKfycbxY7UqTmUz6kO2jK-3FV5M8hWU5XKzPmB7RrJG9/exec", true);
+            xhttp.send(formData);
+        });
+    </script>
+
 </body>
+
 </html>
