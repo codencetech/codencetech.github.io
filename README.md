@@ -1,2 +1,2 @@
-# codencetech.hithub.io
+# codencetech.github.io
 Codence Technology Website
