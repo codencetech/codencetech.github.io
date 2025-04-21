@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codence - Web & Mobile App Development</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" data-aos="fade-right">
+                <a href="#home">
+                    <img src="images/codence.png" alt="Codence Logo">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li data-aos="fade-down" data-aos-delay="100"><a href="#home">Home</a></li>
+                <li data-aos="fade-down" data-aos-delay="200"><a href="#services">Services</a></li>
+                <li data-aos="fade-down" data-aos-delay="300"><a href="#portfolio">Portfolio</a></li>
+                <li data-aos="fade-down" data-aos-delay="400"><a href="#about">About</a></li>
+                <li data-aos="fade-down" data-aos-delay="500"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-up">Welcome to <span class="highlight">Codence</span></h1>
+            <h2 data-aos="fade-up" data-aos-delay="200">Professional Web & Mobile Application Development</h2>
+            <p data-aos="fade-up" data-aos-delay="300">Transform your ideas into powerful digital solutions</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
+        <div class="hero-video-container" data-aos="zoom-in">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="images/earth.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Services</h2>
+            <p>We deliver comprehensive digital solutions to meet your business needs</p>
+        </div>
+        <div class="services-container">
+            <div class="service-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Custom website development with responsive design, e-commerce solutions, and content management systems.</p>
+            </div>
+            <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile App Development</h3>
+                <p>Native and cross-platform mobile applications for iOS and Android with seamless user experiences.</p>
+            </div>
+            <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>User-centric design focused on creating intuitive, engaging, and visually appealing digital experiences.</p>
+            </div>
+            <div class="service-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="service-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>SEO Optimization</h3>
+                <p>Improve your online visibility and drive more traffic to your website with our SEO strategies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Portfolio</h2>
+            <p>Check out some of our recent projects</p>
+        </div>
+        <div class="portfolio-filter" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+        </div>
+        <div class="portfolio-container">
+            <div class="portfolio-item web" data-aos="zoom-in" data-aos-delay="100">
+                <div class="portfolio-img">
+                    <div class="portfolio-placeholder"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>E-commerce Platform</h3>
+                    <p>Web Development</p>
+                </div>
+            </div>
+            <div class="portfolio-item mobile" data-aos="zoom-in" data-aos-delay="200">
+                <div class="portfolio-img">
+                    <div class="portfolio-placeholder"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Fitness Tracker App</h3>
+                    <p>Mobile Development</p>
+                </div>
+            </div>
+            <div class="portfolio-item ui" data-aos="zoom-in" data-aos-delay="300">
+                <div class="portfolio-img">
+                    <div class="portfolio-placeholder"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Banking Dashboard</h3>
+                    <p>UI/UX Design</p>
+                </div>
+            </div>
+            <div class="portfolio-item web" data-aos="zoom-in" data-aos-delay="400">
+                <div class="portfolio-img">
+                    <div class="portfolio-placeholder"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Educational Platform</h3>
+                    <p>Web Development</p>
+                </div>
+            </div>
+            <div class="portfolio-item mobile" data-aos="zoom-in" data-aos-delay="500">
+                <div class="portfolio-img">
+                    <div class="portfolio-placeholder"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Food Delivery App</h3>
+                    <p>Mobile Development</p>
+                </div>
+            </div>
+            <div class="portfolio-item ui" data-aos="zoom-in" data-aos-delay="600">
+                <div class="portfolio-img">
+                    <div class="portfolio-placeholder"></div>
+                </div>
+                <div class="portfolio-info">
+                    <h3>Social Media Dashboard</h3>
+                    <p>UI/UX Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header" data-aos="fade-up">
+            <h2>About Us</h2>
+            <p>Get to know our team and our mission</p>
+        </div>
+        <div class="about-container">
+            <div class="about-image" data-aos="fade-right">
+                <div class="about-placeholder"></div>
+            </div>
+            <div class="about-content" data-aos="fade-left">
+                <h3>Who We Are</h3>
+                <p>Codence is a leading software development company specializing in web and mobile applications. We combine creativity with technical expertise to deliver outstanding digital solutions.</p>
+                <p>Our team of skilled developers, designers, and digital strategists work together to bring your ideas to life and help your business grow in the digital landscape.</p>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <h4>100+</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>50+</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>5+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Client Testimonials</h2>
+            <p>What our clients say about us</p>
+        </div>
+        <div class="testimonial-slider" data-aos="fade-up">
+            <div class="testimonial-slide active">
+                <div class="testimonial-content">
+                    <p>"Codence delivered our e-commerce platform ahead of schedule with exceptional quality. Their attention to detail and responsive communication made the process seamless."</p>
+                    <div class="client-info">
+                        <h4>Mayur Kosandar</h4>
+                        <p>E-commerce Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <p>"The mobile app they developed for our healthcare service has received outstanding feedback from users. Their technical expertise and innovative approach exceeded our expectations."</p>
+                    <div class="client-info">
+                        <h4>Santosh Basragan</h4>
+                        <p>Healthcare Services Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <p>"Working with Codence was a pleasure from start to finish. They understood our vision perfectly and transformed it into an intuitive, beautiful website."</p>
+                    <div class="client-info">
+                        <h4>Shubham Raut</h4>
+                        <p>Marketing Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Contact Us</h2>
+            <p>Get in touch with our team</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>Codence Office, Maharashtra</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+91 9730212149</p>
+                        <p>+91 9130470745</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>codence.technology@gmail.com</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" data-aos="fade-left" id="contactForm" action="send-email.php" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                <div class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/codence.png" alt="Codence Logo">
+                <p>Transforming ideas into digital reality</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="mailto:codence.technology@gmail.com">Email Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Mobile App Development</li>
+                    <li>UI/UX Design</li>
+                    <li>SEO Optimization</li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Codence. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
